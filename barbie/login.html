@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      *{margin: 0; padding: 0;}
+      .app_name{margin-left: 29%;}
+      .login{
+          position: absolute;
+          margin-top: 3%;
+          margin-left: 28%;
+          height: 380px;
+          width: 700px;
+          border-radius: 3%;
+          background-color: white;
+          box-shadow: 7px 12px 10px rgb(104, 102, 102) ;
+      }
+      #user{
+          position: absolute;
+          height: 200px;
+          width: 200px;
+          margin-top: 10%;
+          margin-left: 7%;
+      }
+      .info>h2{
+          margin-left: 60%;
+          margin-top: 6%;
+          font-size: 2.2em;
+      }
+      .inputs{
+          margin-left: 47%;
+      }
+      .ip{
+          margin-left: 60%;
+          margin-top: 3%;
+          border: 1px solid black;
+          background-color: lightgrey;
+          text-align: center;
+      }
+
+      #submit{
+          background-color: rgb(10, 177, 10);
+          font-size: 20px;
+          font-family: cursive;
+      }
+  </style>
+</head>
+<body>
+    <!--Heading Name-->
+    <h1 class="app_name"> Login </h1>
+
+    <div class="login">
+        <img src="ul.png" id="user" alt="user image">
+        <div class="formDiv">
+            <form action="login.php" method="POST" class="info">
+                <h2>Credentials</h2>                
+                <div class="form-column">
+                    <div class="col-md-6 mb-3 inputs">
+                      <label for="validationDefault03">Email</label>
+                      <input type="email" class="form-control" id="validationDefault03" placeholder="Email Id" required name="email" autocomplete="off" autofocus>
+                    </div>
+                    <div class="col-md-6 mb-3 inputs">
+                      <label for="validationDefault04">Pasword</label>
+                      <input type="password" class="form-control" id="validationDefault04" placeholder="Password" required name="passwd" autocomplete="off">
+                    </div>
+                    <label style="color: red; margin-left: 50%; margin-top: -2%;">*enter valid credentials.</label>
+                    <a><button type="submit" class="btn btn-primary col-md-3 ip" id="submit" name="sub" value="redirect">Login</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
